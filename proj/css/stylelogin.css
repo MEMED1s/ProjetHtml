@@ -1,0 +1,107 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: none;
+   
+}
+
+* {
+    
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins","sans-serif";
+}
+
+.wrapper {
+  background-color: rgb(67, 50, 67);
+  border-radius: 10px;
+  position: absolute;
+  top: 38%;
+  left: 63%;
+  padding: 20px 80px 10px 80px;
+  margin-right: -15%;
+  background: rgb(71, 54, 71);
+  border: none;
+}
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+  color: white;
+}
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input{
+width: 100%;
+height: 100%;
+background: #6f3c6f;
+border: none;
+border: 2px solid rgba(255, 255, 255, .2);
+border-radius: 40px;
+font-size: 16px;
+color: white;
+padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+  color: #fff;
+}
+.input-box i {
+position: absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+font-size: 20px;
+}
+.wrapper .remenebr-forgot{
+display: flex;
+justify-content: space-between;
+font-size: 14.5px;
+margin: -15px 0px 15px;
+color: white;
+}
+
+.remenebr-forgot a{
+color: white;
+text-decoration: none;
+}
+.remenebr-forgot a:hover{
+  text-decoration: underline;
+
+}
+.wrapper .btn{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  background-color:#6f3c6f;
+  color: white;
+  margin-bottom: 10px;
+
+}
+
+
+
+#logo{
+  margin-top: 20px;
+  height: 120px ;
+  width:120px ;
+  position: absolute;
+  margin-left: 10px;
+
+}
+
+

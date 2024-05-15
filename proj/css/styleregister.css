@@ -1,0 +1,105 @@
+
+    .navbar ul{
+        list-style: none;
+        background:	#6f3c6f;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        height: 53px;
+    }
+    
+    
+
+    
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+    * {
+        
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins","sans-serif";
+    }
+    
+    .wrapper{
+    background-color:rgb(67, 50, 67);
+    border-radius: 10px;
+    height: 600px ;
+    margin: 2% 37% 20px 37%;
+    padding: 20px 50px 20px 50px;
+    }
+    .wrapper h1{
+      font-size: 36px;
+      text-align: center;
+      color: white;
+      margin-bottom: 10px;
+    }
+    .wrapper .input-box {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin: 30px 0;
+      margin-bottom: -10px;
+    }
+    .input-box input{
+    width: 100%;
+    height: 100%;
+    background: #6f3c6f;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+    
+    }
+    .input-box input::placeholder{
+      color: #fff;
+    }
+    .input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    }
+
+
+    .wrapper .btn{
+      width: 100%;
+      height: 45px;
+      background: #fff;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+      font-size: 20px;
+      background-color:#6f3c6f;
+      color: white;
+      margin-top: 15px;
+    }
+
+    .btn .login-link{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-family: "Poppins","sans-serif";
+    }
+    
+
+
+    .home{
+      margin: 100px ;
+      border-color: black;
+    }
+    #logo2{
+      height: 120px ;
+      width:120px ;
+      position: absolute;
+      margin-left: 2px;
+    
+    }
+    
+    

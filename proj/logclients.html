@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>login</title>
+    <link rel="stylesheet" href="css/logclients.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    
+    
+        <script src="js/home2.js" defer></script>
+        <div class="navbar">
+            <img id="logo2" src="images/CHOUFOUNI FLOWERS SHOP.png" alt="">
+            <ul>
+                <li style="margin-left: 12%;"><a href="home2.html">Home</a></li>
+                <li class="dropdown1">
+                    <a href="#" style="width: 160px;">Categories <i class='bx bx-chevron-down'></i></a>
+                    <ul class="dropdown-menu1">
+                        <li><a href="occaswedd.html">Weddings</a></li>
+                        <li><a href="occaslove.html">Love & romance</a></li> 
+                        <li><a href="dried.html">Dried flowers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown2">  
+                    <a href="#">Order by Season <i class='bx bx-chevron-down'></i></a>
+                    <ul class="dropdown-menu2">
+                        <li><a href="spring.html">Spring flowers</a></li>
+                        <li><a href="summer.html">Summer flowers</a></li>
+                        <li><a href="winter.html">Winter flowers</a></li>
+                    </ul>
+                </li>
+                <li style="background-color: rgb(71, 54, 71); "><a href="logclients.html">Admin</a></li>
+                <li class="dropdown3">  
+                    <a style="width: 180px;">Buy by Price <i class='bx bx-chevron-down'></i></a>
+                    <ul class="dropdown-menu3">
+                        <li><a href="lessthan200.html">Less than 200DH </a></li>
+                        <li><a href="200to400.html">200DH to 400DH</a></li>
+                        <li><a href="morethan400.html">More than 400DH</a></li>
+                    </ul>
+                </li>
+                <li class="search" style="margin-left: 30px;">
+                    <input type="text" placeholder="Search..." style="color: rgb(71, 54, 71);">
+                    <button type="submit"><i class="bx bx-search"></i></button>
+                </li>
+                <li class="log1">
+                  <a href="Thankyou.html" style="color: white;">Logout</a>
+              </li>
+              <li class="cart" >
+                <button class="shop-button"><img src="images/shop.png" style="width: 28px; height: 20px;"></button>
+            </li>
+      
+      
+            </ul>
+        </div>
+      </head>
+<body >
+    <div><img src="images/logclients.jpg" alt="" style="width:100% ; height:100% ; z-index: -1;margin-bottom: 0px"></div>
+    <div class="wrapper" style="top: 35%;left: 35%;">
+        <form action="clients.html" onsubmit="return vallog()">
+            <h1>Admin space</h1>
+            <div class="input-box">
+                <input type="text" id="user" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="pass" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div> 
+            <label style="color: white;"><input type="checkbox" onclick="showpass()"> Show password </label><br>
+            <span id="info" style="color: red;"></span><br><br>
+        <div style="display: flex;">
+            <button type="submit" class="btn">Login</button>
+            <button style="margin-left: 3%;" onclick="history.back()" class="btn">Return</button>
+        </div>
+            <div class="register-link">
+             
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function vallog() {
+            var users = [
+                { username: 'memed1', pass: 'pass1' },
+                { username: 'memed2', pass: 'pass2' }
+            ];
+    
+            var username = document.getElementById("user").value;
+            var password = document.getElementById("pass").value;
+    
+            for (var i = 0; i < users.length; i++) {
+                if (username === users[i].username && password === users[i].pass) {
+                    return true; 
+                }
+            }
+    
+
+            document.getElementById("info").innerText = "Invalid username and password";
+            return false;
+        }
+    </script>
+    
+</body>
+</html>
